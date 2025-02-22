@@ -1,0 +1,10 @@
+name: potato-service
+
+services:
+  backend:
+    build: .
+    container_name: potato-service-backend
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
